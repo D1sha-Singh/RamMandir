@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Jai Shri Ram</title>
+</head>
+
+<body>
+    <div id="root">
+        <!-- UI using plain html
+            <h1>Jai Shri Ram!!</h1>
+        -->
+    </div>
+    
+    <!--
+        
+        React code overtakes/replaces HTML & JS code
+        but for a moment you'll see HTML & JS code being rendered
+        before React code is displayed.
+
+        JS engine..!!
+
+    -->
+    
+    <!-- UI using vanilla/plain JS -->
+    <!--
+        <script>
+            const heading2 = document.createElement('h2');
+            heading2.innerHTML = 'Ram Madir, Ayodhya'
+
+            const parent = document.getElementById('root');
+            parent.appendChild(heading2);
+        </script>
+    -->
+    
+    <!-- React cdn links -->
+    <!-- React inserted into our project -->
+    
+    <!-- React super code -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js">
+    </script>
+    
+    <!-- React DOM code -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+    </script>
+    <script src="./App.js">
+        // // core React feature
+        // //createElement takes 3 parameters as compared to document.createElement which takes 1 argument
+        // const App = React.createElement('h1', {}, "Ram Janm Bhoomi Mandir, Ayodhya")
+        
+        // // React DOM feature
+        // const root = ReactDOM.createRoot(document.getElementById('root'));
+        // root.render(App);
+
+    </script>
+
+</body>
+
+</html>
